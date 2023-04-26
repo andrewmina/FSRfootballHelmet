@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane id="myPane" prefHeight="602.0" prefWidth="709.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <tabs>
+      <Tab id="introTab" text="IntroTab">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Pane id="introPane" layoutX="-1.0" layoutY="-2.0" prefHeight="564.0" prefWidth="709.0" style="-fx-background-color: #1E90FF;">
+                     <children>
+                        <Text layoutX="123.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Concussion Testing">
+                           <font>
+                              <Font name="Britannic Bold" size="45.0" />
+                           </font>
+                        </Text>
+                        <Ellipse fill="#806b48" layoutX="323.0" layoutY="324.0" radiusX="100.0" radiusY="173.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Line endX="100.0" layoutX="325.0" layoutY="324.0" rotate="90.0" startX="-100.0" stroke="#e4e1e1" strokeWidth="4.0" />
+                        <Line endX="50.0" fill="#f2f0ec" layoutX="325.0" layoutY="264.0" startX="-50.0" stroke="#f8f8f8" strokeWidth="3.0" />
+                        <Line endX="50.0" fill="#f2f0ec" layoutX="323.0" layoutY="302.0" startX="-50.0" stroke="#f8f8f8" strokeWidth="3.0" />
+                        <Line endX="50.0" fill="#f2f0ec" layoutX="323.0" layoutY="340.0" startX="-50.0" stroke="#f8f8f8" strokeWidth="3.0" />
+                        <Line endX="50.0" fill="#f2f0ec" layoutX="327.0" layoutY="375.0" startX="-50.0" stroke="#f8f8f8" strokeWidth="3.0" />
+                        <Button id="startButton" layoutX="287.0" layoutY="502.0" mnemonicParsing="false" text="Start">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+      <Tab id="rightTab" fx:id="leftTab" text="Right">
+         <content>
+            <Pane id="rightPane" prefHeight="274.0" prefWidth="348.0" style="-fx-background-color: #1E90FF;">
+               <children>
+                  <Text id="rightMild" layoutX="517.0" layoutY="451.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mild Hit" wrappingWidth="109.01171875">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Text>
+                  <Text id="rightHeavy" layoutX="80.0" layoutY="470.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Heavy Hit" wrappingWidth="124.73828125">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Text>
+                  <Arc disable="true" fill="#0bb54c" layoutX="350.0" layoutY="242.0" length="270.0" radiusX="163.0" radiusY="168.0" startAngle="6.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+                  <QuadCurve controlX="-50.0" controlY="-100.0" disable="true" endX="50.0" fill="DODGERBLUE" layoutX="435.0" layoutY="344.0" rotate="85.9" scaleY="3.0" startX="-50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Text disable="true" layoutX="260.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rebels" wrappingWidth="125.87955474853516">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#52fcba" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                     <font>
+                        <Font name="System Bold Italic" size="37.0" />
+                     </font>
+                  </Text>
+                  <Circle id="rightCircle" fill="#ff1f1f" layoutX="331.0" layoutY="130.0" radius="26.0" stroke="BLACK" strokeType="INSIDE" />
+               </children>
+            </Pane>
+         </content>
+      </Tab>
+      <Tab id="leftTab" fx:id="rightTab" text="Left">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Pane id="leftPane" prefHeight="565.0" prefWidth="709.0" style="-fx-background-color: #1E90FF;">
+                     <children>
+                        <Arc disable="true" fill="#0bb54c" layoutX="372.0" layoutY="252.0" length="270.0" radiusX="163.0" radiusY="160.0" rotate="141.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+                        <Text disable="true" layoutX="271.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rebels" wrappingWidth="102.87955474853516">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#52fcba" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                           <font>
+                              <Font name="System Bold Italic" size="31.0" />
+                           </font>
+                        </Text>
+                        <QuadCurve controlX="-50.0" controlY="-100.0" disable="true" endX="50.0" fill="DODGERBLUE" layoutX="244.0" layoutY="361.0" rotate="-82.9" scaleY="3.0" startX="-50.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Text id="leftHeavy" layoutX="31.0" layoutY="522.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Heavy Hit" wrappingWidth="145.1640625">
+                           <font>
+                              <Font size="34.0" />
+                           </font>
+                        </Text>
+                        <Text id="leftMild" layoutX="436.0" layoutY="513.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mild Hit" wrappingWidth="120.228515625">
+                           <font>
+                              <Font size="34.0" />
+                           </font>
+                        </Text>
+                        <Circle id="leftCircle" fill="#ff1f1f" layoutX="364.0" layoutY="226.0" radius="26.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+      <Tab id="frontTab" text="Front">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Pane id="frontPane" layoutY="-1.0" prefHeight="565.0" prefWidth="709.0" style="-fx-background-color: #1E90FF;">
+                     <children>
+                        <Ellipse fill="#2fbf66" layoutX="334.0" layoutY="223.0" radiusX="119.0" radiusY="126.0" rotate="-90.0" stroke="#149a31" strokeType="INSIDE" />
+                        <Circle fill="DODGERBLUE" layoutX="339.0" layoutY="323.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                        <Text disable="true" layoutX="226.0" layoutY="201.0" rotate="81.9" strokeType="OUTSIDE" strokeWidth="0.0" text="Rebels" wrappingWidth="53.879554748535156">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#52fcba" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Text>
+                        <Text disable="true" layoutX="395.0" layoutY="183.0" rotate="-90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rebels" wrappingWidth="53.879554748535156">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#52fcba" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Text>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" layoutX="262.0" layoutY="242.0" opacity="0.33" stroke="BLACK" strokeType="INSIDE" width="144.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" layoutX="251.0" layoutY="262.0" opacity="0.33" stroke="BLACK" strokeType="INSIDE" width="167.0" />
+                        <Text id="frontHeavy" layoutX="71.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Heavy Hit" wrappingWidth="167.1640625">
+                           <font>
+                              <Font size="34.0" />
+                           </font>
+                        </Text>
+                        <Text id="frontMild" layoutX="462.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mild Hit" wrappingWidth="133.228515625">
+                           <font>
+                              <Font size="34.0" />
+                           </font>
+                        </Text>
+                        <Circle id="frontCircle" fill="#ff1f1f" layoutX="339.0" layoutY="195.0" radius="26.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+      <Tab id="historyTab" text="Hit History">
+         <content>
+            <AnchorPane prefHeight="541.0" prefWidth="688.0" style="-fx-background-color: #1E90FF;">
+               <children>
+                  <ListView id="hitList" layoutX="149.0" layoutY="183.0" prefHeight="315.0" prefWidth="368.0" />
+                  <Label alignment="CENTER" graphicTextGap="10.0" layoutX="231.0" layoutY="84.0" prefHeight="37.0" prefWidth="235.0" text="Hits!!!">
+                     <font>
+                        <Font size="50.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+   </tabs>
+</TabPane>
